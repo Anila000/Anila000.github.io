@@ -1,0 +1,257 @@
+
+.index1.index2{
+  color:rgb(88, 88, 183)
+}
+.index1>h2{
+  background-color: lightblue;
+  font-weight:bold ;
+  text-align: center; 
+}
+.index2>h2{
+  background-color: lightblue;
+  font-weight:bold ;
+  text-align: center;
+}
+.index3{
+margin-bottom: 155px;
+
+}
+
+
+
+.index3>h2{
+  background-color: lightblue;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.index2.index3 img{
+  margin:10px;
+  padding: 15px;
+  border: 25px solid black;
+
+}
+
+article>p {
+  font-style: italic;
+}
+aside>p{
+  font-style: italic;
+}
+a[href="./index.html"]{
+  color:rgb(189, 236, 79);
+  width: 10px;
+  height: 5px;
+}
+
+a:hover{
+  color: yellow;
+}
+
+#label1 {
+  display: block;
+  float: none;
+}
+
+#message {
+  display: block;
+  float: none;
+  margin-top: 0;
+}
+.sound{
+  margin: 0 auto;
+}
+
+.container1{
+  top: 50px;
+  border: solid 2px rgb(7, 7, 7);
+
+}
+.container1>h1{
+  text-align: center;
+  background-color: lightblue;
+  
+}
+
+nav{
+  text-align: center;
+}
+.container>h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2,mainArticle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.index1 {
+  max-width: 1200px;
+  padding: 20px;
+}
+.index2{
+  max-width: 1200px;
+  padding: 20px;
+}
+.index3{
+  max-width: 1200px;
+  padding: 20px;
+}
+
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.sound {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+audio {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+#s1>h2{
+  text-align: center;
+  background-color: lightblue;
+}
+h1{
+  text-align: center;
+}
+
+h2+p::first-line{
+margin-top: 20px;
+color: blue;
+
+}
+h2~p {
+margin-top: 20px;
+color: rgb(240, 94, 184);
+}
+
+/* CSS for A3*/
+
+
+.container1 {
+  color: black;
+}
+
+body,html {
+  height: 100%;
+  margin: 0%;
+}
+
+header {
+  height: 80%;
+  margin-top: 0%;
+}
+
+#hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero-image-A3.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#c1,h1 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: translate(-50%, -50%);
+  color: white;
+}
+
+.image{
+  width: 300px;
+  height: 300px;
+  margin-right: 0%;
+  object-fit: cover;
+  flex: 1;
+  margin: 0 auto;
+}
+
+
+/*This is for Desktop*/
+@media screen and (min-width: 1400px) {
+  .image{
+    width: 400px;
+    height: 400px;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  #hero_image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .container>s1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+  }
+}
+/* Making the content in form displaing in the same line  */
+
+
+/*This is for Tablets*/
+@media screen and (min-width: 1000px) {
+  .image{
+    width: 300px;
+    height: 300px;
+    
+  }
+ 
+}
+/*This is for Mobile*/
+@media screen and (max-width: 600px) {
+  .image{
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+  #CustomerInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
